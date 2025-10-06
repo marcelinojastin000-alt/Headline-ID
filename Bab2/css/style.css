@@ -1,0 +1,340 @@
+/* ======== Global Style ======== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2b2a4c, #4b4376);
+  color: #fff;
+}
+
+/* ======== Navbar ======== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 15px 40px;
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: #facc15;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.logo span {
+  color: #15fa4e;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5f5f5;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #facc15;
+}
+
+/* ======== Hero (Index) ======== */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: radial-gradient(circle at center, #2b2a4c 0%, #1e1c32 100%);
+}
+
+.hero h1 {
+  color: #facc15;
+  font-size: 2.5rem;
+}
+
+.hero span {
+  color: #15fa4e;
+}
+
+.hero p {
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+/* ======== News Section (Index) ======== */
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.news-container article {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.news-container article:hover {
+  transform: translateY(-5px);
+}
+
+.news-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-container h2 {
+  color: #facc15;
+  margin: 10px 15px 5px;
+}
+
+.news-container p {
+  color: #ddd;
+  margin: 0 15px 15px;
+  line-height: 1.5;
+}
+
+/* ======== Form (Login & Register) ======== */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  gap: 15px;
+  text-align: center;
+}
+
+.form-container h1 {
+  color: #facc15;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+button {
+  background: #facc15;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #f5b301;
+}
+
+/* ======== Dashboard & Transaksi ======== */
+.dashboard, .transaksi {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2b2a4c, #1e1c32);
+  color: #fff;
+}
+
+.dashboard h1, .transaksi h1 {
+  color: #facc15;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.dashboard p, .transaksi p {
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  color: #fff;
+}
+
+th {
+  background: rgba(250, 204, 21, 0.2);
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ======== Footer ======== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+/* ======== Tambahan Style untuk Halaman Transaksi ======== */
+.transaksi-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.transaksi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.transaksi-header h2 {
+  color: #facc15;
+  font-size: 1.5rem;
+}
+
+.transaksi-header button {
+  background: #15fa4e;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.transaksi-header button:hover {
+  background: #10d840;
+  transform: scale(1.05);
+}
+
+/* Tabel Transaksi */
+.transaksi table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.transaksi th {
+  background: rgba(250, 204, 21, 0.25);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px;
+}
+
+.transaksi td {
+  padding: 12px;
+  color: #eee;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.transaksi tr:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transition: 0.3s;
+}
+
+/* Tombol Edit / Hapus */
+.btn-edit {
+  background: #facc15;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-edit:hover {
+  background: #f5b301;
+}
+
+.btn-delete {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-delete:hover {
+  background: #c9182b;
+}
+
+/* Form Tambah Transaksi */
+.form-transaksi {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.form-transaksi input,
+.form-transaksi select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.form-transaksi input::placeholder {
+  color: #ddd;
+}
+
+.form-transaksi button {
+  align-self: flex-start;
+  background: #15fa4e;
+  color: #222;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-transaksi button:hover {
+  background: #10d840;
+  transform: scale(1.05);
+}
